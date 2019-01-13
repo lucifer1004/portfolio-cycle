@@ -18,7 +18,8 @@
     "test": "cycle-scripts test",
     "build": "cycle-scripts build",
     "eject": "cycle-scripts eject",
-    "clean": "cycle-scripts clean"
+    "clean": "cycle-scripts clean",
+    "now-build": "yarn build && mv build dist"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,json}": [
