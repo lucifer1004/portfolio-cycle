@@ -1,6 +1,14 @@
 import xs, {Stream} from 'xstream'
 import sampleCombine from 'xstream/extra/sampleCombine'
-import {VNode, DOMSource, div, h2, textarea, button} from '@cycle/dom'
+import {
+  VNode,
+  DOMSource,
+  div,
+  h2,
+  textarea,
+  button,
+  CycleDOMEvent,
+} from '@cycle/dom'
 
 import {Sources, Sinks, Reducer} from '../interfaces'
 
@@ -58,7 +66,7 @@ function view(state$: Stream<State>): Stream<VNode> {
 function intent(DOM: DOMSource): DOMIntent {
   const updateText$ = DOM.select('#text')
     .events('input')
-    .map((ev: any) => ev.target.value)
+    .map((ev: any) => ev.target.value as string)
 
   const speech$ = DOM.select('[data-action="speak"]')
     .events('click')
