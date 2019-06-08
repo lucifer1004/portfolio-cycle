@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@types/mocha": "^5.2.6",
+    "@types/mocha": "^5.2.7",
     "cycle-scripts-one-fits-all": "^7.2.1",
     "cyclejs-test-helpers": "^4.0.0",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.5",
-    "prettier": "^1.16.4",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2",
     "snabbdom-looks-like": "^1.0.5",
     "snabbdom-pragma": "^2.8.0"
   },
@@ -70,7 +70,7 @@
     "cyclejs-utils": "^4.0.2",
     "cyclic-router": "^6.0.0",
     "switch-path": "^1.2.0",
-    "xstream": "^11.10.0"
+    "xstream": "^11.11.0"
   },
   "one-fits-all": true,
   "resolutions": {
